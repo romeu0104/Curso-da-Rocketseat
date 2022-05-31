@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Contato</legend>
+            <Label for="nome">Nome completo</Label>
+            <div></div>
+            <input placeholder="Nome completo" autofocus required id="nome" name="nome" type="text">
+            <br> <br>
+            <label for="email">Email</label>
+            <div></div>
+            <input name="email" required placeholder="email@email.com" type="email" id="email">
+            <br><br>
+            <label for="telefone">Telefone</label>
+            <div></div>
+            <input placeholder="99999999999" name="telefone" required id="telefone" maxlength="11" type="tel">
+            <br><br>
+            <label for="mensagem">Mensagem</label>
+            <br>
+            <textarea placeholder="Digite sua mensagem..." name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            <br><br>
+            <label for="notificações">Você aceita receber notificações?</label>
+            <input type="checkbox" id="notificações">
+            <br><br>
+            <label for="termos">Vc aceita os <a target="_blank" href="https://google.com">termos</a>?</label>
+            <input required type="checkbox" name="termos" id="termos">
+            <br><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </fieldset>
+        
+    </form>
+
+</body>
+</html>

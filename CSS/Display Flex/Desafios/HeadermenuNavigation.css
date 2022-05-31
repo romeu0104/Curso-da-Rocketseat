@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;   
+    margin: 2%; 
+    }
+
+.navButtom{
+    
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: .8rem;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: .8rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    background-color: purple;
+    border: none;
+    border-radius: 5px;
+    height: 30px
+}

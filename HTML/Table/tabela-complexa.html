@@ -1,0 +1,46 @@
+<table>
+    <caption>Produção vs Vendas</caption>
+
+    <colgroup>
+        <!-- style para cores, somente span pois já entende que se trata de colunas por está dentro do col-->
+        <col>
+        <col span="2" style="background-color: red;">
+        <col span="2" style="background-color: blue;">
+    </colgroup>
+    <thead>
+            <tr>
+                <th rowspan="2"></th> <!-- rowspan = número de linhas q serão ocupadas -->
+                <th colspan="2" scope="colgroup">Loja 1</th> 
+                
+                <!--colspan = número de colunas que serão ocupadas pelo mesmo cabeçalho-->
+                <!--scolpe para ajudar na acessibilidade e ao secolocar colgrup diz que o primeiro cabeçalho possui um agrupamento de colunas-->
+
+                <th colspan="2" scope="colgroup">Loja 2</th>
+            </tr>
+            <tr>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <!--scope col p acessibilidade diz que o cabeçalho segue a coluna-->
+            </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th>
+            <!-- scope row para acessibilidae onde diz q o cabeçalho segue a linha -->
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th scope="row">Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>

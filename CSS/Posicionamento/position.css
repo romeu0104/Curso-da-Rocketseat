@@ -1,0 +1,50 @@
+.box{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 8px;
+}
+.box1{
+    background-color: red;
+    /* na tag posicion: relative temos 5 propriedades: top, right, left, bottom, z-index. Ao utilizar relative os valores colocados nessas props. fará com que a box seja empurrada a partir de onde foi selecionado sem alterar as outras box*/
+    position: relative;
+    left: 200px;
+    top: 100px;
+}
+.box2{
+    background-color: blue;
+    /* No posicionamento absolute é como se criasse uma segunda camada acima da primeira, sobrepondo ela, os outros elementos na primeira camada se ajustaram automaticamente, ou seja a box3 irá ocupar a posição que era da box2 antes dela ser posicionada como absolute, ele sempre será posicionado em relação a toda a página, ignorando por exemplo margens definidas, se ele estiver dentro de uma tag pai que tiver alguma position ele será relativo a essa tag pai , as propriedades são as mesmas da anterior*/
+    position: absolute;
+    top: 20x;
+    left: 300px;
+}
+.box3{
+    background-color: green;
+    /*Fixed segue o msm contexto q a absolute ao criar uma nova camada, porém ele fica fixo na tela, ou seja, ao se rolar a página ele sempre estará presente na mesma posição da tela do navegador*/
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+/* z-index é tulizado para se posicionar as camadas no eixo z (eixo que vem de dentro da tela em nossa direção), atribuindo valores numéricos vc escolhe a ordem da camada, sendo o de maior valor sempre por cima*/
+
+.box4{
+    background-color: black;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 15;
+}
+.box5{
+    background-color: chartreuse;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+}
+.box6{
+    background-color: deeppink;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 3;
+}

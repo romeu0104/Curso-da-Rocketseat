@@ -1,0 +1,45 @@
+/* Direção dos itens
+
+- Horizontal (row) ou Vertical (column)
+- 'flex-direction:' para mudar a direção (row, row-reverse, column, column-reverse*/
+
+/*          flex-wrap
+
+    - podemos usar várias linhas
+    - cada nova linha, um novo flex container*/
+
+/* Para visualizar diminua o tamanho da página*/
+/*      flex-flow posso colocar as propriedade de wrap e direction*/
+
+.wrap{
+    height: 80vh;
+    display: flex;
+    border: 1px dashed red;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+
+/*      Justify-content: 
+ - Alinhamento dos valores dentro do container
+ - Distribuição dos elementos
+ - Propriedade evenly deixa os espaços por igual
+ */     
+
+justify-content: space-evenly;
+
+
+/*      alining-items
+ - Alinhamento dos elementos no eixo cruzado
+ */
+
+    align-items: center;
+
+/*          gap
+ - Espaço entre os elementos*/
+
+    gap: 200px;
+}
+.itemWrap{
+    border: 1px solid black;
+    width: 300px;
+    height: 100px;
+}

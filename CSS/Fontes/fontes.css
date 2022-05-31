@@ -1,0 +1,9 @@
+p{
+    /*no fonte family as fontes seguem esse padrão, caso n ache a primeira, vai para a segunda e assi, sucessivamente*/
+    font-family: 'Times New Roman', Times, serif;
+    /*Font weight é o peso da fonte, podendo ser bold, bolder, lighter, normal ou receber numeção (100,200,300,400,500...) a numeração não funciona para todas a famílias*/
+    font-weight: bold;
+    /*fonte style, é o estilo da fonte, italic, normal, oblique*/
+    font-style: oblique;
+    font-size: 30px;
+}

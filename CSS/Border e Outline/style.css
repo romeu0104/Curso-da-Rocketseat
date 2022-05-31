@@ -1,0 +1,8 @@
+div{
+    width: 100px;
+    height: 100px;
+    border: solid red 20px;
+    border-top: dotted green 5px;
+
+    box-sizing: border-box; /*usado para que o box n ultrapasse o tamanho estipulado de altura e largura*/
+}

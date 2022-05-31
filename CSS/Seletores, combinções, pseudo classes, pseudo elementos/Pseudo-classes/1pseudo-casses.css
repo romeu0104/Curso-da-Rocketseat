@@ -1,0 +1,73 @@
+article{
+    width: 30vw;
+}
+p{
+    margin: 0px;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+}
+div{
+   display: flex;
+   flex-direction: column;
+   margin: 10px;
+   width: 100vw;
+   align-items: center;
+
+}
+input{
+    width: 25%
+}
+
+
+/* First-child: seleciona a primeira tag filha da tag pai*/
+/* Se eu tivesse por exemplo uma tag h1 dentro do ul sendo a primeira filha, msm eu selecionando li na combinação ele não funcionaria nem para o li nem p o h1, pois o li é o segundo filho e não primeiro*/
+ul li:first-child{
+    color: green;
+}
+
+/* nth-of-type - com essa pseudo classe vou definir qual filho (primeiro, segundo...) q possua A MESMA TAG eu quero, colocando o número dentro de um parenteses no final*/
+/*No exemplo a seguir dentro de article existe uma tag h1 e três p*/
+
+article p:nth-of-type(1){
+    color: red;
+}
+
+/*nth-child - Aqui ele pega a tag pai e conta todos os filhos, independente de quais tags sejam,
+na família article a tag mudada no Ex. anterior, na contagem total seria a número 2, mas como a classe separa por tipo ela é a primeira do tipo dela. Na nth-child, a msm tag será mudada, mas receberar o número 2 porque na família ela é a segunda*/
+
+article p:nth-child(2){
+    font-size: 30px;
+}
+
+/*nth-child (odd) e (even)
+                even =====> par
+                od =======> ímpar
+    Aqui separa os filhos ímpares do pares*/
+
+article p:nth-child(odd){
+    background-color: gray;
+    font-size: 25px;
+    color: darkblue;
+}
+article p:nth-child(even){
+    background-color: black;
+    color: white;
+    border: solid;
+    border-style: dashed;
+    border-color: blueviolet;
+    font-weight: bold;
+}
+
+/* ######################### Hover diz o que acontece quando se passa o mouse em cima #########*/
+
+button:hover{
+    color: white;
+    background-color: black;
+}
+
+/* ######################### Hover diz o que acontece quando se passa o mouse em cima #########*/
+input:focus{
+    background-color: red;
+}

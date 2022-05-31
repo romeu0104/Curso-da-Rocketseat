@@ -1,0 +1,34 @@
+/*Seletor universal = 0*/
+
+*{
+    color: green;
+}
+
+/* Element type selector = 1*/
+
+h1{
+    color: red;
+}
+
+/* Class e atribute selectors = 10*/
+.paragrafo{
+    color: blueviolet;
+}
+
+/* Id selector = 100*/
+#para1{
+    color: rebeccapurple;
+}
+/* para sobrescrever uma classe de maior número pode-se juntar várias classes, no exemplo abaixo se juntou varias classes para dar o valor maior q 100 de um Id*/
+
+#id{
+    color: chartreuse;
+}
+h5#id{
+    color: black;
+}
+
+/* a regra !important sobresai a todas as outras e anula o efeito casca*/
+h5{
+    color: red !important;
+}

@@ -1,0 +1,16 @@
+p{
+    
+    /*letter ou word-spacing: espaçamento entre letras e palavras*/
+    letter-spacing: 8px;
+    word-spacing: 15px;
+    /*line-height: espaçamento entre linhas*/
+    line-height: 2;
+    /*text-transforme: mudar entre letras maúsculas e minúsculas, capitalize somente as primeiras letras maúsculas*/
+    text-transform: capitalize;
+    /*text-decoration: decoração de linhas*/
+    text-decoration: green underline overline line-through;
+    /*alinhamento do texto*/
+    text-align: center;
+    /*sombreamento do texto, por algum motivo não funcionou*/
+    text-shadow: 1px 1px 1xp green;
+}

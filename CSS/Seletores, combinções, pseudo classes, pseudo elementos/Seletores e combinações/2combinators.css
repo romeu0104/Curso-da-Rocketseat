@@ -1,0 +1,43 @@
+/* Combinando seletores separados por espaço, o css busca de forma descendente esse caminho até o último seletor indicado*/
+
+body article h2{
+    color: red;
+}
+
+/* Child - pega somente os elementos q estiverem diretamente ligados ao pai utilizando o sinal '>'
+
+Exemplo 1: utilizando apenas combinators sem o sinal de maior, ele vai pegar todos os elementos q estiverem dentro da tag com o msm nome independente se esse elemento estiver dentro de outra tag, nesse exemplo temos 1 ul q e está dentro de outro ul, portanto irá pegar todos os li contidos dentro do primeiro ul*/
+
+body ul li{
+    background-color: pink;
+}
+
+/*Exemplo 2: aqui ele irá pegar somente o elemento filho q está dentro do pai, ignorando o restante*/
+
+body>ul>li{
+    color: blue;
+    font-weight: bold;
+}
+body>ul>ul>li{
+    color: green;
+    font-size: 30px;
+}
+
+
+/*Adjacent Sibling - no sibling ele irá pegar a tag irmão mais próximo utilizando o '+' para aplicar as alterações
+Exemplo1: mudar a cor da tag irmã p mais próxima de h1 (temos 2 tag p, porém só irá mudar de 1)*/
+
+h1+p{
+    color: red;
+}
+/*Exemplo2: na maioria das vezes é utilizado para colocar uma distância entre dois elementos em linha como nos botões abaixo*/
+button+button{
+    margin-left: 10px;
+}
+
+
+
+/*General Sibling - esse seleciona todos os irmãos utilizando '~', não só o mais próximo*/
+h1~p{
+    background-color: pink;
+}

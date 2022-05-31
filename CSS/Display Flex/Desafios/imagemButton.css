@@ -1,0 +1,11 @@
+button img{
+    width: 10rem;
+    height: 10rem;
+}
+button{
+    display: flex;
+    gap:.8rem;
+    align-items: center;
+    justify-content: center;
+    line-height: none;
+}

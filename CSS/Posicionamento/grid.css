@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    /*grid-tamplate-area irá definir quantas linhas e colunas meu layout irá ter, sendo que, cada "" siginifica uma linha e dentro das linhas a quantidade de valores que eu colocar será a quantidade de colunas, cada valor separado por espaço será uma coluna, esses valores pode ser qualquer coisa, para ficar mais didático nesse exemplo utilizou o nome de cada parte*/
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+    /*Definir o tamanho das linhas, vai se colocar os valores na ordem das linhas acima*/
+    grid-template-rows: 40px 1fr 50px;
+    /*para a linha do meio se escolheu 1fr = 1 fração, significa que ela irá ocupar o espaço que sobra independente do tamanho da tela (flexível)*/
+    grid-template-columns: 1fr 90px;
+    /*aqui definimos as larguras das colunas, sendo que a priemira é flexível e a segunda não*/
+}
+header{
+    /*podemos usar o flex dentro do grid*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    /*aqui irá se posicionar de acordo com o q foi dito anteriormente, como header foi o valor esclhido para sinalizar a posição, logo o grid-area receberá esse valor, mas se anteriormente eu tivesse colocado qualquer outro nome para simbolizar a região aqui teria que ter o mesmo valor*/
+    grid-area: header;
+    background-color: green;
+}
+main{
+    grid-area: main;
+    background-color: red;
+}
+aside{
+    grid-area: aside;
+    background-color: blue;
+}
+footer{
+    grid-area: footer;
+    background-color: gray;
+}

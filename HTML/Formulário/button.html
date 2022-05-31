@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Tag Button</button>
+    <!--Atributo type pode ser submit (para enviar o fomulário), reset(para resetar) e button (alguns navegadores irão entender q é para enviar o formulário, por isso é melhor usar submit)-->
+    <button type="submit">Enviar</button>
+    <form action="">
+        <button type="reset">Resetar</button>
+        <fieldset>
+            <legend>Dados Pessoa Física</legend>
+            <label>Nome</label>
+            <!--Se eu quiser que mostre algo antes de digitar dentro do quadro uso o atributo value dentro de input-->
+            <input type="text" value="Nome completo aqui">
+        </fieldset>    
+    </form>
+    <button type="reset">Resetar</button>
+    <button type="button">Botão</button>
+    <!--Atributo autofucus, quando apertar o botão enter, automaticamente clica no botão que tenha esse atributo-->
+    <button autofocus>Só apertar enter</button>
+    <!--Atributo diseble desabilita o botão, com JS posteriormente pode-se aplicar funções para que ele seja habilitado após preencher todo o formulário por exemplo-->
+    <button disabled>Desabilitado</button>
+    <!--Atributos name e value, não ficou muito claro para mim, porém será explicado melhor posteriormente-->
+    <!--Atributo form linka o botão á um fomulário específico, exemplo hipotético: se vc tiver dois formulários em uma página e quer enviar só 1 deles, vc clica no botão de enviar desse formuário específico-->
+    <form action="" id="meu-form"></form>
+    <button type="submit" form="meu-form">Enviar</button>
+</body>
+</html>

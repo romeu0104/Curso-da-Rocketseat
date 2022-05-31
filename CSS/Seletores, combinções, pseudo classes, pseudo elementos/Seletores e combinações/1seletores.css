@@ -1,0 +1,43 @@
+
+/*Seletores de elementos*/
+h1{
+    color: blue;
+}
+p{
+    color: red;
+}
+
+/*Seletor de class*/
+.red{
+    color: red;
+}
+.big{
+    font-size: 5em;
+}
+
+/*Seletores de id (id prevalece em cima dos demais seletores independente da posição na cascata)*/
+#content{
+    color: purple;
+}
+#tittle{
+    color: green;
+}
+
+/*Seletores de atributos*/
+[title]{
+    background-color: black;
+}
+
+/*Seletores Pseudo-class (no exemplo a baixo irá mudar a cor do elemento quando passar o mouse em cima)*/
+/*PARA FUNCIONAR É PRECISO TIRAR O SELETOR DE ID*/
+h1:hover{
+    color: yellow;
+}
+p:hover{
+    color: yellow;
+}
+
+/*Múltiplos seletores devem ser separados por vírgula*/
+#tittle:hover, #content:hover{
+    color: red;
+}

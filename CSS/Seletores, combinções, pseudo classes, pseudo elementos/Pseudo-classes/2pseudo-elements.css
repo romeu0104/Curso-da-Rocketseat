@@ -1,0 +1,20 @@
+/* Pseudo-elements são os '::' seguido do marcador */
+        /*todos ele eu preciso da propriedade 'content=""', mesmo q vazia pa funcionarem*/
+
+/*Before adiciona algo antes
+after adiciona após*/
+
+li::before{
+    content: "===>";
+    color: green;
+}
+li::after{
+    content: "%%%%%%";
+    color: red;
+}
+
+/*first-line mexe somente na primeira linha*/
+
+p::first-line{
+    font-weight: bold;
+}

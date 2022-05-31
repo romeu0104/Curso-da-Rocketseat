@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="treino" action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome completo</label>
+            <input id="nome" name="nome" type="text" autocomplete="additional-name" autofocus required>
+            <!--o atributo Autofocus já posiciona o cursor no input desejado e o atributo riquirede signigica que o campo é obrigatório-->
+            <div></div>
+            <label for="cpf">CPF</label>
+            <input id="cpf" name="CPF" type="number" required>
+            <div></div>
+            <label for="datanas">Data de Nascimento</label>
+            <input id="datanas" name="data de nascimento" type="date" required>
+            <div></div>
+            <label for="senha">Senha</label>
+            <input minlength="6" maxlength="12" id="senha" name="Senha" type="password" placeholder="Digite sua senha" required>
+            <!--Placeholder fica uma msg dentro do campo
+            minlength/maxlength mínimo e maximo de caracteres
+            -->
+            <div></div>
+            <label for="idade">Idade</label>
+            <input min="18" max="99" id="idade" type="number">
+            <div></div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required multiple>
+            <!--Multiple permite colocar 1 ou mais emails separados por vírgula-->
+            <div></div>
+            <label for="imagem">Imagem</label>
+            <input type="file" accept="image/*" multiple>
+            <!--Accept define que tipo de arquivo será aceito, ao colocar o tipo de arquivo seguido de /* diz q aceita todos arquivos daquele tipo
+            Multiple para poder selecionar vários arquivos
+            quando utilizar o input file, precisa dessa estrutura na tag form: method="post" enctype="multipart/form-data"-->
+            <div></div>
+            <label for="historia">Nos conte sobre você</label>
+            <textarea wrap="off" name="historia" id="historia" cols="30" rows="10" placeholder="Conte sua trajetória até agora." required></textarea>
+            <!--o atributo wrap com valor off, faz com não haja quebra de linha ao chegar no final da caixa, se não colocar ele automaticamente quebra a linha quando chega no limite-->
+            <div>
+                <fieldset>
+                    <legend>Escolha seus interesses</legend>
+                    <div>
+                        <label for="notificações">Aceita receber notificações:</label>
+                        <input type="checkbox" id="notificações" name="interesses">
+                        <label for=""></label>
+                    </div>
+                    <div>
+                        <label for="musica">Musica</label>
+                        <input type="checkbox" name="interesses" id="musica">                        
+                    </div>
+                    <div>
+                        <label for="arte">Arte</label>
+                        <input type="checkbox" name="interesses" id="arte">
+                    </div>
+                    <!--Para que aceite multiplos valores todos o itens de de conter o mesmo valor dentro do valor name-->
+                    
+                </fieldset>
+            </div>
+          </fieldset>
+          <fieldset>
+              <legend>Suas preferências</legend>
+              <label for="carro">Marca de carro preferida:</label>
+              <select name="carros" id="carro">
+                  <option value="legenda" disabled selected>Selecione abaixo</option>
+                  <option value="Ferrari">Ferrari</option>
+                  <option value="Wolks">Wolks</option>
+                  <option value="Lambo">Lambo</option>
+                  <option value="Ford">Ford</option>
+                  <option value="Tesla">Tesla</option>
+                  </select>
+                  <div></div>
+                  <label for="fruta">Fruta preferida:</label>
+                  <select name="Frutas" id="fruta">         
+                      <option value="legenda" disabled selected>Selecione abaixo</option>
+                      <option value="Laranja">Laranja</option>
+                      <option value="uva">Uva</option>
+                      <option value="maçã">Maçã</option>
+                      </select>
+                      <br>
+                      <label for="animais">Selecione 1 animal para cada categoria:</label>
+                      <select name="animais" id="animais" multiple>
+                          <!--Nesse caso de seleção múltipla o usuário deverá seleciornar mais de 1 utilizando a tecla control, não vejo vantagem em usar esse-->
+                          <optgroup label="Mamíferos">
+                              <option value="cachorro">Cachorro</option>
+                              <option value="cavalo">Cavalo</option>
+                              <option value="morcego">Morcego</option>
+                              <option value="baleia">Baleia</option>
+                          </optgroup>
+                          <optgroup label="Aves">
+                              <option value="Falcão">Falcão</option>
+                              <option value="Canário">Canário</option>
+                              <option value="Gavião">Gavião</option>
+                          </optgroup>
+                          <optgroup label="Peixes">
+                              <option value="Tubarão">Tubarão</option>
+                              <option value="Sardinha">Sardinha</option>
+                          </optgroup>
+                    
+                      </select>
+          </fieldset>
+          <div></div>
+          <fieldset>
+              <datalist id="searchOS">
+                  <option value="Win">Windows</option>
+                  <option value="Mac">Mac</option>
+                  <option value="Linux">Linux</option>
+              </datalist>
+              <label for="OS">Sistema operacional preferido</label>
+              <input type="search" name="OS" list="searchOS">
+          </fieldset>
+    </form>
+    <button type="submit" form="treino">Eviar</button>
+
+</body>
+</html>

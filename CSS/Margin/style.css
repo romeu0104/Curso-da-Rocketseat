@@ -1,0 +1,16 @@
+* {margin: 0;}
+div, section{
+border: 1px solid red;
+width: 100px;
+height: 100px;
+display: inline;
+margin: 0 4px;
+}
+div{
+    margin-bottom: 8px;
+}
+section{
+    margin-top: 8px;
+}
+/*quando a margem colapsa e a caixa é uma em cima da outra, não se soma as distancias, ao contrario do acontece quando se coloca uma ao lado da outra como no exemplo abaixo ao se mudar o display para inline*/
+

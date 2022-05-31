@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data List</title>
+</head>
+<body>
+    <form id="formulario1">
+        <fieldset>
+            <legend>Escolha o animal</legend>
+            <!--o atributo PLACEHOLDER dentro da tag input é para aparecer o texto mais clarinho, ao contrário do atributo value que já é um valor pré determinado-->
+            <label for="animal">Animal:</label>
+            <input type="text" list="animalsdata" placeholder="Escolha um animal" id="animal">
+            <datalist id="animalsdata">
+                <option>Cavalo</option>
+                <option>Boi</option>
+                <option>Cabra</option>
+                <option>Galinha</option>
+                <option>Porco</option>
+            </datalist>
+        </fieldset>
+    </form>
+    <button type="submit" form="formulario1">Enviar Animal</button>
+    <form id="formulario2">
+        <fieldset>
+            <legend>Escolha uma Cor</legend>
+            <label for="color">Cor:</label>
+            <input type="color" list="colorsdata" id="color">
+            <datalist id="colorsdata">
+                <option>#ff5500</option>
+                <option>#ff0000</option>
+                <option>#0000ff</option>
+            </datalist>          
+        </fieldset>
+    </form>
+    <button form="formulario2" type="submit">Enviar Cor</button>    
+</body>
+</html>

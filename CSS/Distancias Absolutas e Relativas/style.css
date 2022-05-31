@@ -1,0 +1,40 @@
+/* Unidades absolutas são as normais já conhecidas:
+| Unidade  | Nome                | Equivalência         |
+|----------|---------------------|----------------------|
+| cm       | Centímetros         | 1cm = 96px/2.54      | 
+| in       | Inches (polegadas)  | 1in = 2.54cm = 96px  | 
+| px       | Pixels              | 1px = 1/96th of 1in  |
+*/
+
+
+/* Unidades relativas:
+| Unidade  | Relativo a                                    |
+|----------|-----------------------------------------------|
+| em       | Tamanho da font do elemento pai               |
+| rem      | Tamanho da font do elemento raiz (root/html)  | 
+| vw       | 1% da viewport wid                            |  
+| vh       | 1% da viewport height                         |
+*/
+
+div{
+    font-size: 18px;
+}
+p{
+    font-size: 2em;
+}
+/* em é relativo ao tamanho da font pai, no exemplo a fonte pai tem 18px logo a font filha com valor de 2em será 2x maior*/
+
+/* por padrão a font raiz (root) é 16px, usando o mesmo princípio do em, vc altera suas fontes ao utilizar rem em relação a font raíz
+exemplos abaixo de como mudar a fonte raíz*/
+
+:root{
+    font-size: 16px;
+}
+html {
+    font-size: 18px;
+}
+p{
+    font-size: 2rem;
+}
+
+/* O viewport é a parte da tela que está sendo exibida. No caso dos navegadores web, é o que é exibido na janela/tela do documento. Conteúdos que estão fora do viewport só serão exibidos quando feito um scroll da área de visualização.*/

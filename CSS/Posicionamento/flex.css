@@ -1,0 +1,30 @@
+body{
+    height: 100vh;
+    margin: 0;
+    /* ao se colocar display flex ele se ajusta em relação a tela, nesse caso somente em relação a altura*/
+    display: flex;
+    /* align-items alinha os itens, nesse explo no centro em relação a altura especificada anteriormente*/
+    align-items: center;
+}
+.container{
+    width: 100vw;
+    /*ao se colocar display flex dentro da tag pai ele automaticamente em liha*/
+    display: flex;
+    /*justificar conteudo no centro*/
+    justify-content: center;
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 8px;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
