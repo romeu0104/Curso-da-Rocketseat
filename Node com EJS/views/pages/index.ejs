@@ -11,7 +11,16 @@
         <div class="jumbotron">
             <h1>Node.js</h1>
             <p>Vamos aprender a trabalhar com arquivos EJS</p>
+            <p><%= subtitle %></p>
         </div>
+        <ul>
+            <!--Abaixo é criado um loop for each, que irá puxar um objeto do arquivo server.js e para cada item desse objeto ele executa uma função-->
+            <% nomeObjetoPlural.forEach(function(nomeObjetoSingular){ %> <!--Como EJS não aceita tags Html, devo fechar o EJS aqui e abrir e fechar no final após as tags Html-->
+                <li>
+                    <strong><%= nomeObjetoSingular.title %></strong>  <%= nomeObjetoSingular.message %><!--Como os itens a serem impressos são códigos JavaScript eu preciso coloca-los dentro das tags EJS e o sinal de = no início p dizer q quero mostrar o conteúdo dentro da tag-->
+                </li>
+            <% }) %>
+        </ul>
     </main>
     <%- include('../partials/footer'); %>
 </body>
