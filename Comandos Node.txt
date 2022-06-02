@@ -1,0 +1,7 @@
+Comandos Node
+
+npm init -y = iniciar projeto node
+
+npm install ejs - instalar o ejs para rodar os arquivos
+
+npm install express - para criar um servidor

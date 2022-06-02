@@ -1,0 +1,45 @@
+Comandos git
+
+git log - mostra informações de todos commits
+
+git log --oneline - versão resumida dos commits
+
+git log -n 5 - mostra os últimos commits, quantidade será definida pelo número
+
+git log --since=2020-05-23 - commits após essa data
+
+git log --until=2020-05-23 - commits após essa data
+
+git log --author=Romeu - filtra por author
+
+git log --grep="TERMO" - busca o termo digitado na msg gravada no commit (git commit -m "TERMO outras palavras qualquer) e filtra todos os commits que contenham esse termo
+
+git add *.html - adicionar ao stage area todos arquivos de uma extenção específica
+
+git diff - compara o q foi alterado desde o último commit
+
+git diff --staged - compara alterações dos arquivos da stage area com o último commit
+
+git mv nome1 nome2 - para renomear arquivos
+
+git mv arquivo pasta/arquivo - para mover arquivo de uma pasta para outra
+
+git restore nomedoarquivo - restaura modificações antes de ser enviadas ao stage
+
+git restore --staged nomedoarquivo - restaura o arquivo do staged p o work
+
+git restore --staged . - retira todos os arquivos do stage
+
+
+%%%%%%% CORRIGIR ÚLTIMO COMMIT %%%%%%%%%
+
+git commit --amend -m "descrição" - ao dar esse comando ele vai alterar a descrição e caso tenha algum arquivo no stage ele irá acrescentar esse arquivo ao commti já existente
+
+
+%%%%%%%%%%%%%% recuperando algum arquivo de commits anteriores
+
+git checkout <hashCommit> -- nomedoarquivo.extensão - recupera esse arquivo, SE TIVER UM ARQUIVO com o mesmo nome ele sobescreve com arquivo antigo
+
+git clean -f - exclui arquviosnão rastreado sem ir p lixeira
+
+git revert HEAD~númeroCommit - reverter ao comite de número x contando ar partir do seu no git log

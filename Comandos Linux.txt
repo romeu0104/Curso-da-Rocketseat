@@ -1,0 +1,38 @@
+comandos linux
+
+
+pwd - mostra o da pasta atual
+
+CTRL+L - empurra todos os comandos já dados para cima
+
+CTRL+A - volta o cursor para o inicio da linha
+
+mkdir - cria nova pasta
+
+ls - lista conteúdo do diretório
+
+touch - criar arquivos, usa chaves e nomes entre vírgulas SEM ESPAÇO para criar mais de um arquivo exemplo: touch {home,index, produtos,...}.html
+
+nano - abre arquivo em um editor de texto (como o bloco de notas) ex: nano index.html
+
+cat - mostra o conteudo de um arquivo de texto no proprio termina
+
+##Sub comandos do ls##
+
+ls -l - mostra mais informações sobre os arquivo
+
+ls -a - mostra arquivos ocultos também
+
+pode-se fazer combinações exemplo: ls-la
+
+cd - comando para entrar em pastas e cd .. para voltar
+
+cp - copiar e colar arquivos ex: cp nomeArquivoCopiado nomeArquivoCriado
+
+mv - move um arquivo renomeando ele (funciona como renomear) ex: mv index.html home.html ||OU move de pasta ex: mv style.css css/
+
+file - mostra informações do arquivo (nome, tipo)
+
+stat - mostra informações do arquivo (info mais completas)
+
+rm - apagar arquivos e diretorios
